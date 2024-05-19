@@ -1,0 +1,17 @@
+.app-container {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 1em 0;
+}
+
+.add-button {
+  font-size: 2em;
+  padding: 0.5em;
+  margin: 1em 0;
+  cursor: pointer;
+}

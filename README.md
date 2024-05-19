@@ -1,70 +1,28 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
 
 ### `npm start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Claro, aquí tienes un resumen de las librerías y las funciones utilizadas en el código:
 
-### `npm test`
+### Librerías Utilizadas:
+1. **React:** Una biblioteca de JavaScript para construir interfaces de usuario.
+2. **useState:** Un hook de React que permite agregar estado a componentes de función.
+3. **useEffect:** Un hook de React que permite realizar efectos secundarios en componentes funcionales, como la ejecución de código después de que el componente ha sido renderizado.
+4. **uuidv4:** Una función de la librería UUID que genera identificadores únicos universales (UUID) en formato versión 4.
+   
+### Funciones Definidas:
+1. **App:** El componente principal que representa la aplicación.
+2. **addProduct:** Una función que agrega un nuevo producto al estado `products`. Antes de agregar el producto, verifica si ya existe un producto con el mismo ID o nombre y muestra una alerta si es así.
+3. **updateProduct:** Una función que actualiza un producto existente en el estado `products`.
+4. **deleteProduct:** Una función que elimina un producto del estado `products`.
+   
+### Componentes Utilizados:
+1. **ProductList:** Un componente que muestra una lista de productos. Recibe los productos del estado `products` y las funciones `updateProduct` y `deleteProduct` como props.
+2. **ProductForm:** Un componente que muestra un formulario para agregar nuevos productos. Recibe la función `addProduct` como prop.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Otras Características:
+1. **Almacenamiento Local:** Utiliza el almacenamiento local del navegador para guardar y cargar la lista de productos. Se utiliza `localStorage` para almacenar la lista de productos en formato JSON.
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
